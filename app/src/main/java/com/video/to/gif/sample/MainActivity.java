@@ -197,11 +197,4 @@ public class MainActivity extends BaseActivity implements View.OnClickListener{
         }, "取消", view -> toolAlertDialog.dismissAlertDialog(), false);
     }
 
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        FileUtil.deleteDirWihtFile(new File(Environment.getExternalStorageDirectory().getPath() + "/Android/data/" + mContext.getPackageName() + "/ImagePicker/cropTemp/"));
-        FileUtil.deleteDirWihtFile(new File(ConstantObj.BASE_CACHE_PATH + mContext.getPackageName() + "/ImagePicker"));
-        FileUtil.deleteDirWihtFile(new File(ConstantObj.BASE_CACHE_PATH + mContext.getPackageName() + "/cache/compress_cache"));
-    }
 }
