@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">BaseLibrary</string>
+    <string name="main_exit_tips">再次点击返回键退出应用&#8230;</string>
+    <string name="please_wait">请稍后&#8230;</string>
+
+    <string name="ip_all_images">所有图片</string>
+    <string name="ip_folder_image_count">共%1$d张</string>
+    <string name="ip_preview_image_count">%1$d/%2$d</string>
+    <string name="ip_select_limit">最多选择%1$d张图片</string>
+    <string name="ip_complete">完成</string>
+    <string name="ip_select_complete">完成(%1$d/%2$d)</string>
+    <string name="ip_preview">预览</string>
+    <string name="ip_preview_count">预览(%1$d)</string>
+    <string name="ip_photo_crop">图片裁剪</string>
+    <string name="ip_origin">原图</string>
+    <string name="ip_origin_size">原图(%1$s)</string>
+    <string name="share_view_photo">share_view_photo</string>
+    <string name="indicator">%1$d/%2$d</string>
+    <string name="all_video">所有视频</string>
+    <string name="image">图片</string>
+    <string name="video">视频</string>
+
+    <string name="permissionRequest">权限申请</string>
+    <string name="ensureNormalOperation">为了保证正常使用[</string>
+    <string name="pleaseAllow">],需要获取设备存储权限，请允许</string>
+    <string name="pleaseAllowStoreAndCam">],需要获取设备存储权限以及相机权限，请允许</string>
+    <string name="pleaseAllowCamera">,需要获取相机权限，请允许</string>
+    <string name="pleaseAllowLocal">,需要获取定位权限，请允许</string>
+    <string name="goToAllow">去允许</string>
+
+    <string name="pay_me_product_payMoney_pay_style">请选择支付方式</string>
+    <string name="pay_me_wChat_pay">微信支付</string>
+    <string name="pay_me_aliPay_pay">支付宝支付</string>
+    <string name="pay_me_yinlian_pay">银联支付</string>
+    <string name="tuijianyouzhifubao">推荐有支付宝帐号的用户使用</string>
+    <string name="weixinzhifu_tuijia">推荐安装微信5.0及以上版本使用</string>
+    <string name="yinlianzhifu_tip">支持储蓄卡信用卡等</string>
+    <string name="order_money_jine">订单金额：</string>
+    <string name="jiesuan_jie">结算</string>
+    <string name="nopay">支付取消</string>
+    <string name="payed">支付成功</string>
+    <string name="pay_fail">支付失败</string>
+    <string name="nowxpay">微信版本低或未安装微信支付</string>
+
+    <!--dialog-->
+    <string name="common_dialog_ok">确定</string>
+    <string name="common_dialog_cancel">取消</string>
+
+    <string name="pullup_to_load">上拉加载更多</string>
+    <string name="release_to_load">释放立即加载</string>
+    <string name="loading">正在加载&#8230;</string>
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新&#8230;</string>
+
+</resources>

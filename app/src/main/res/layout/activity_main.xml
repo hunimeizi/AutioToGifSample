@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/view_toolbar" />
+    <Button
+        android:id="@+id/btn_chooseAudio"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="选择短视频"
+        android:textAllCaps="false" />
+    <TextView
+        android:id="@+id/tv_dirGif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10dp"
+        android:textSize="@dimen/_14sp"
+        android:textColor="@color/black"/>
+    <ImageView
+        android:id="@+id/image_gif"
+        android:layout_width="239dp"
+        android:layout_height="426dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_20dp"/>
+
+</LinearLayout>

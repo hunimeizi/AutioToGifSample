@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--透明度参照表；-->
+    <!--00%=FF（不透明）    5%=F2    10%=E5    15%=D8    20%=CC    25%=BF    30%=B2    35%=A5-->
+    <!--40%=99    45%=8c    50%=7F    55%=72    60%=66    65%=59    70%=4c-->
+    <!--75%=3F    80%=33    85%=21    90%=19    95%=0c    100%=00（全透明）-->
+    <drawable name="transparent">#00000000</drawable>
+    <color name="transparent">#00000000</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#FFFFFF</color>
+    <color name="textColor">#333333</color>
+    <color name="allBackgroundColor">#f5f5f5</color>
+    <color name="nine_image_text_background_color">#4D000000</color>
+    <color name="home_text_color">#222222</color>
+    <color name="main_tab_bottom_divider_color">#b2b2b2</color>
+    <color name="common_font">#545454</color>
+    <color name="back_bg_press">#33000000</color>
+    <color name="titleBarColor">#ffffff</color>
+    <color name="tool_bar_color">#303030</color>
+    <color name="bg_color">#303030</color>
+    <color name="text_color_white">#FFFFFF</color>
+    <color name="text_bg_gray">#99000000</color>
+    <color name="bg_black">#000000</color>
+    <color name="ic_back_press">#323336</color>
+    <color name="ip_color_primary">#393A3F</color>
+    <color name="ip_color_primary_dark">#303135</color>
+    <color name="ip_color_primary_trans">#ec2f3335</color>
+    <color name="ip_color_press">#ffe0e0e0</color>
+    <color name="ip_camera_pre">#353535</color>
+    <color name="ip_color_accent">#1AAD19</color>
+    <color name="ip_text_secondary_inverted">#66ffffff</color>
+    <color name="ip_text_primary_inverted">#ffffff</color>
+    <color name="translucent">#00000000</color>
+    <color name="black">#000000</color>
+    <color name="gray">#808080</color>
+    <color name="btn_sele_btn">#ffb774</color>
+</resources>

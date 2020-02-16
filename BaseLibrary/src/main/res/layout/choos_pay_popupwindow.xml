@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pop_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="50dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:text="@string/pay_me_product_payMoney_pay_style"
+                        android:textColor="@color/home_text_color"
+                        android:textSize="@dimen/_18sp" />
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#eeeeee" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:id="@+id/mine_huiyuan_center"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:background="@color/white"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/_50dp"
+                                android:layout_height="@dimen/_50dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/_10dp"
+                                android:background="@mipmap/wchat_pay_order"
+                                android:contentDescription="@string/app_name" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/_10dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:focusable="true"
+                                    android:gravity="center"
+                                    android:text="@string/pay_me_wChat_pay"
+                                    android:textColor="@color/home_text_color"
+                                    android:textSize="@dimen/_16sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:focusable="true"
+                                    android:gravity="center"
+                                    android:text="@string/weixinzhifu_tuijia"
+                                    android:textColor="@color/gray" />
+
+                            </LinearLayout>
+
+                            <CheckBox
+                                android:id="@+id/checkBox_wchat"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginRight="@dimen/_10dp"
+                                android:background="@drawable/check_box_select"
+                                android:checked="true"
+                                android:button="@null" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="#eeeeee" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:background="@color/white"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageView3"
+                                android:layout_width="@dimen/_50dp"
+                                android:layout_height="@dimen/_50dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/_10dp"
+                                android:background="@mipmap/alipay_mipmap"
+                                android:contentDescription="@string/app_name" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/_10dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:focusable="true"
+                                    android:gravity="center"
+                                    android:text="@string/pay_me_aliPay_pay"
+                                    android:textColor="@color/home_text_color"
+                                    android:textSize="@dimen/_16sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:focusable="true"
+                                    android:gravity="center"
+                                    android:text="@string/tuijianyouzhifubao"
+                                    android:textColor="@color/gray" />
+
+                            </LinearLayout>
+
+                            <CheckBox
+                                android:id="@+id/alipay_check"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginRight="@dimen/_10dp"
+                                android:background="@drawable/check_box_select"
+                                android:button="@null"
+                                android:checked="false" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="#eeeeee" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:background="@color/white"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/_50dp"
+                                android:layout_height="@dimen/_50dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/_10dp"
+                                android:background="@mipmap/yinlian_mipmap"
+                                android:contentDescription="@string/app_name" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/_10dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_product_detail_kefu"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:focusable="true"
+                                    android:gravity="center"
+                                    android:text="@string/pay_me_yinlian_pay"
+                                    android:textColor="@color/home_text_color"
+                                    android:textSize="@dimen/_16sp" />
+
+                                <TextView
+                                    android:id="@+id/tv_product_detail_shoucang"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:focusable="true"
+                                    android:gravity="center"
+                                    android:text="@string/yinlianzhifu_tip"
+                                    android:textColor="@color/gray" />
+
+                            </LinearLayout>
+
+                            <CheckBox
+                                android:id="@+id/yinlian_pay"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginRight="@dimen/_10dp"
+                                android:background="@drawable/check_box_select"
+                                android:button="@null" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="#eeeeee" />
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical">
+
+            <View style="@style/common_view_style" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/_20dp"
+                    android:focusable="true"
+                    android:text="@string/order_money_jine"
+                    android:textColor="@color/home_text_color"
+                    android:textSize="@dimen/_20sp" />
+
+                <TextView
+                    android:id="@+id/tv_pay_money"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/_10dp"
+                    android:layout_marginRight="@dimen/_10dp"
+                    android:layout_weight="1"
+                    android:focusable="true"
+                    android:gravity="left"
+                    android:text="0.00"
+                    android:textColor="#ff6704"
+                    android:textSize="@dimen/_20sp" />
+
+                <Button
+                    android:id="@+id/pop_btn_jiesuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/common_button_bg_selector"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:paddingLeft="@dimen/_15dp"
+                    android:paddingRight="@dimen/_15dp"
+                    android:text="@string/jiesuan_jie"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+</LinearLayout>

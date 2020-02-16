@@ -1,0 +1,58 @@
+<resources>
+    <style name="customer_progress_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="ActionSheetDialogStyle" parent="@android:style/Theme.Dialog">
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 浮于Activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- Dialog以外的区域模糊效果 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- Dialog进入及退出动画 -->
+        <item name="android:windowAnimationStyle">@style/ActionSheetDialogAnimation</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+
+    </style>
+    <!-- ActionSheet进出动画 -->
+    <style name="ActionSheetDialogAnimation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/qrc_show_anim</item>
+        <item name="android:windowExitAnimation">@anim/qrc_hint_anim</item>
+    </style>
+    <style name="base_dialog_message_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="common_view_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">#e6e6e6</item>
+    </style>
+    <!--SuperCheckbox的样式-->
+    <style name="SuperCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/imagepicker_selector_item_checked</item>
+    </style>
+
+    <declare-styleable name="ProportionLayout">
+        <attr name="proportion" format="string" />
+        <attr name="isBaseWidth" format="boolean" />
+    </declare-styleable>
+
+</resources>

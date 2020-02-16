@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_dialog_bg"
+    android:gravity="center"
+    android:padding="35dp">
+
+    <come.haolin_android.mvp.baselibrary.view.ProgressWheel xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/_10dp"
+        app:matProg_barColor="@color/common_font"
+        app:matProg_barWidth="2dp"
+        app:matProg_circleRadius="20dp"
+        app:matProg_progressIndeterminate="true" />
+
+    <TextView
+        android:id="@+id/tips_loading_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/common_font"
+        android:textSize="@dimen/_16sp" />
+</LinearLayout>

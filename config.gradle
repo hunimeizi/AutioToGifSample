@@ -1,0 +1,47 @@
+ext {
+
+    // 生产/开发环境（正式/测试）
+    isRelease = true
+
+    androidId = [
+            compileSdkVersion: 28,
+            buildToolsVersion: "29.0.2",
+            minSdkVersion    : 19,
+            targetSdkVersion : 28,
+            versionCode      : 1,
+            versionName      : "1.0"
+    ]
+
+    appId = [
+            app        : "com.video.to.gif.sample",
+            baselibrary: "come.haolin_android.mvp.baselibrary"
+    ]
+
+    url = [
+            "debug"  : "http://114.116.26.89:8898/",
+            "release": "https://11.22.33.44/release/"
+    ]
+
+    supportLibrary = "28.0.0" // ${xxx}
+    dependenciesLib = "4.9.0" // ${xxx}
+    // 第三方库
+    dependencies = [
+            "appcompat"   : "com.android.support:appcompat-v7:${supportLibrary}",
+            "recyclerview": "com.android.support:recyclerview-v7:${supportLibrary}",
+            "constraint"  : "com.android.support.constraint:constraint-layout:1.1.3",
+            "design"      : "com.android.support:design:${supportLibrary}",
+            "glide"       : "com.github.bumptech.glide:glide:${dependenciesLib}",
+            "annotations" : "com.github.bumptech.glide:annotations:${dependenciesLib}",
+            "okhttp3"     : "com.github.bumptech.glide:okhttp3-integration:${dependenciesLib}",
+            "multidex"    : "com.android.support:multidex:1.0.3",
+            "retrofit"    : "com.squareup.retrofit2:retrofit:2.5.0",
+            "okhttp"      : "com.squareup.okhttp3:okhttp:3.12.1",
+            "gson"        : "com.squareup.retrofit2:converter-gson:2.5.0",
+            "rxandroid"   : "io.reactivex.rxjava2:rxandroid:2.1.0",
+            "rxjava"      : "io.reactivex.rxjava2:rxjava:2.2.12",
+            "rxjava2"     : "com.squareup.retrofit2:adapter-rxjava2:2.5.0",
+            "immersive"   : "com.hacknife:immersive:1.1.0",
+            "nopermission": "ru.alexbykov:nopermission:1.1.2"
+    ]
+
+}

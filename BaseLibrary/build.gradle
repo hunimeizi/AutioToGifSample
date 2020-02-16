@@ -1,0 +1,49 @@
+apply plugin: 'com.android.library'
+
+def androidId = rootProject.ext.androidId
+def support = rootProject.ext.dependencies
+def url = rootProject.ext.url
+
+android {
+    dataBinding {
+        enabled = true
+    }
+    compileSdkVersion androidId.compileSdkVersion
+    buildToolsVersion androidId.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion androidId.minSdkVersion
+        targetSdkVersion androidId.targetSdkVersion
+        versionCode androidId.versionCode
+        versionName androidId.versionName
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled true
+            buildConfigField("String", "URL", "\"${url.debug}\"")
+            buildConfigField "boolean", "SHOW_LOG", "Boolean.parseBoolean(\"true\")"
+            consumerProguardFiles 'proguard-rules.pro'
+        }
+
+        release {
+            minifyEnabled true
+            buildConfigField("String", "URL", "\"${url.release}\"")
+            buildConfigField "boolean", "SHOW_LOG", "Boolean.parseBoolean(\"false\")"
+            consumerProguardFiles 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+    support.each { k, v -> implementation v }
+}
