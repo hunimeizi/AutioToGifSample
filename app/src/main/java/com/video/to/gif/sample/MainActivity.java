@@ -46,6 +46,9 @@ public class MainActivity extends BaseActivity implements View.OnClickListener{
     protected void initViews() {
         setTitleBarView();
         titleBar_title_tv.setText("video转gif");
+        titleBar_more_tv.setText("保存");
+        titleBar_more_tv.setVisibility(View.VISIBLE);
+        titleBar_more_tv.setOnClickListener(v -> startActivity(new Intent(mContext,SaveImageActivity.class)));
         Button btn_chooseAudio = findViewById(R.id.btn_chooseAudio);
         btn_chooseAudio.setOnClickListener(this);
         imageView = findViewById(R.id.image_gif);
